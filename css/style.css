@@ -126,7 +126,7 @@ a {
 
 /* /HEADER */
 
-/* /HEADER */
+/* HOME */
 
 .section-home {
     position: relative;
@@ -180,7 +180,7 @@ a {
     z-index: 15;
 }
 
-/* /HEADER */
+/* /HOME */
 
 /* ABOUT */
 
@@ -236,7 +236,7 @@ a {
 
 .section-about__item:nth-child(3) {
     top: 20%;
-    left: 30%;
+    left: 27%;
     z-index: 10;
 }
 
@@ -247,7 +247,7 @@ a {
 
 .section-about__item:nth-child(5) {
     top: 65%;
-    left: 30%;
+    left: 33%;
     z-index: 10;
 }
 
