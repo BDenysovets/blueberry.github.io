@@ -14,34 +14,42 @@
 <body>
     <header class="section-header section-outer">
         <div class="section-inner">
-            <ul class="header-menu">
-                <li class="header-menu__item">
-                    <a href="#about" class="header-menu__links">
-                        Корисні Властивості
-                    </a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="#partners" class="header-menu__links">
-                        Співпраця
-                    </a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="#testimonials" class="header-menu__links">
-                        Відгуки
-                    </a>
-                </li>
-                <li class="header-menu__item">
-                    <a href="#pricing" class="header-menu__links">
-                        Ціни
-                    </a>
-                </li>
-            </ul>
+            <div class="header-menu__wrapper">
+                <div class="header-mobile__icon"></div>
+                <ul class="header-menu">
+                    <li class="header-menu__item">
+                        <a href="#about" class="header-menu__links">
+                            Корисні Властивості
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#partners" class="header-menu__links">
+                            Співпраця
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#testimonials" class="header-menu__links">
+                            Відгуки
+                        </a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#pricing" class="header-menu__links">
+                            Ціни
+                        </a>
+                    </li>
+                </ul>
+                <div class="burger-menu">
+                    <div class="burger-menu__item line1"></div>
+                    <div class="burger-menu__item line2"></div>
+                    <div class="burger-menu__item line3"></div>
+                </div>
+            </div>
         </div>
     </header>
     <div class="section-home section-outer">
         <div class="section-inner">
             <div class="section-home__wrapper">
-                <div class="section-home__intro section-title">Introducing<span class="dot">.</span></div>
+                <div class="section-home__intro section-title">Вступ<span class="dot">.</span></div>
                 <div class="section-home__title">
                     <img src="images/blueberry_plantslive.png" class="title-img">
                     <span class="title__left-side title">Blue</span>
@@ -63,9 +71,7 @@
                     смачну, корисну ягоду.
                 </div>
                 <ul class="section-about__content">
-                    <li class="section-about__item section-about__img">
-                        <img src="images/Blueberry-fruit-34914645-1600-1517__500px.png" alt="blueberry-photo">
-                    </li>
+                    <li class="section-about__item section-about__img"></li>
                     <li class="section-about__item">
                         <div class="section-about__words">природнiсть
                             <div class="section-about__words-desc">
@@ -273,5 +279,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/burger-menu.js"></script>
 </body>
 </html>
