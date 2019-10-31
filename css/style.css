@@ -900,19 +900,19 @@ a {
     }
 
     .section-testimonials__item {
-        padding: 100px;
+        padding: 110px 100px;
     }
 
     .section-testimonials__item::before {
-        top: -34%;
-        left: -35%;
-        font-size: 450px;
+        top: -32%;
+        left: -34%;
+        font-size: 430px;
     }
     
     .section-testimonials__item::after {
-        bottom: -95%;
-        right: -35%;
-        font-size: 450px;
+        bottom: -88%;
+        right: -34%;
+        font-size: 430px;
     }
 }
 
