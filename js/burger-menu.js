@@ -1,3 +1,4 @@
+
 const menuSlide = () => {
     const burger = document.querySelector('.burger-menu');
     const menu = document.querySelector('.header-menu');
@@ -17,7 +18,7 @@ const menuSlide = () => {
 
         burger.classList.toggle('toogle');
     });
-
+    
 };
 
 menuSlide();
