@@ -59,8 +59,8 @@ a {
     width: 100%;
     height: 70px;
     z-index: 1000;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(204,211,255,1)));
     background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(204,211,255,1) 50%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(204,211,255,1)));
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(204,211,255,1) 50%);
 }
 
@@ -70,8 +70,8 @@ a {
     height: 2px;
     bottom: 0;
     width: 100%;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(255,255,255,0.5)), color-stop(50%, rgba(255,255,255,0.5)), color-stop(50%, rgba(204,211,255,0.5)));
     background: -o-linear-gradient(right, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 50%, rgba(204,211,255,0.5) 50%);
+    background: -webkit-gradient(linear, right top, left top, from(rgba(255,255,255,0.5)), color-stop(50%, rgba(255,255,255,0.5)), color-stop(50%, rgba(204,211,255,0.5)));
     background: linear-gradient(to left, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 50%, rgba(204,211,255,0.5) 50%);
 }
 
@@ -318,8 +318,8 @@ a {
     position: relative;
     margin-top: 70px;
     height: calc(100vh - 70px);
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(204,211,255,1)));
     background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(204,211,255,1) 50%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(204,211,255,1)));
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(204,211,255,1) 50%);
 }
 
@@ -488,78 +488,111 @@ a {
     opacity: 0.1;
     width: 45px;
     height: 45px;
-    animation-name: aboutUsAnime;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: aboutUsAnime;
+            animation-name: aboutUsAnime;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aboutUsAnime {
+    0% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+
+    50% {
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
 }
 
 @keyframes aboutUsAnime {
     0% {
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
     }
 
     50% {
-        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
     }
 
     100% {
-        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
     }
 }
 
 .section-about__bg-image:first-child {
     top: 15%;
     left: 2%;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 
 .section-about__bg-image:nth-child(2) {
     top: 20%;
     right: 2%;
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 .section-about__bg-image:nth-child(3) {
     top: 35%;
     left: 15%;
-    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
 }
 
 .section-about__bg-image:nth-child(4) {
     top: 75%;
     right: 6%;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 
 .section-about__bg-image:nth-child(5) {
     top: 35%;
     right: 20%;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
 }
 
 .section-about__bg-image:nth-child(6) {
     top: 85%;
     left: 10%;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 
 .section-about__bg-image:nth-child(7) {
     top: 55%;
     right: 10%;
-    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
 }
 
 .section-about__bg-image:nth-child(8) {
     top: 65%;
     right: 40%;
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 .section-about__bg-image:nth-child(9) {
     top: 85%;
     right: 30%;
-    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
 }
 
 .section-about__title {
@@ -883,8 +916,12 @@ a {
 }
 
 .section-statistics__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 20px;
 }
 
@@ -904,14 +941,18 @@ a {
 
 @media (min-width: 970px) {
     .section-statistics__list {
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 }
 
 @media (max-width: 969px) {
     .section-statistics__list {
-        justify-content: center;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 }
 
@@ -1156,6 +1197,13 @@ a {
 }
 
 .section-pricing__title {
+    margin-bottom: 15px;
+}
+
+.section-pricing__warning {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(151, 151, 151);
     margin-bottom: 50px;
 }
 
@@ -1415,7 +1463,132 @@ a {
 
 /* /PRICING */
 
-/* /FOOTER */
+/* SEASONS */
+
+.section-seasons {
+    background-color: var(--accent-color-1);
+    height: 100%;
+    padding: 40px;
+}
+
+.seasons-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.seasons-list__item {
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    position: relative;
+}
+
+.seasons-list__item:hover,
+.seasons-list__item:active {
+    -webkit-transform: scale(1.1) translateY(-20px);
+        -ms-transform: scale(1.1) translateY(-20px);
+            transform: scale(1.1) translateY(-20px);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.seasons-list__item:hover .seasons-list__item-img,
+.seasons-list__item:active .seasons-list__item-img {
+    opacity: 0.5;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.seasons-list__item-img {
+    height: auto;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.season-list__item-desc {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.seasons-list__item:hover .season-list__item-desc,
+.seasons-list__item:active .season-list__item-desc {
+    opacity: 1;
+    -webkit-animation: seasonList 0.3s ease-in-out forwards;
+            animation: seasonList 0.3s ease-in-out forwards;
+}
+
+@-webkit-keyframes seasonList {
+    0% {
+        -webkit-transform: translateX(50px);
+                transform: translateX(50px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+@keyframes seasonList {
+    0% {
+        -webkit-transform: translateX(50px);
+                transform: translateX(50px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+                transform: translateX(0px);
+    }
+}
+
+@media (max-width: 559px) {
+    .seasons-list__item-img {
+        width: 75px;
+    }
+
+    .seasons-list__item {
+        margin: 40px 20px;
+    }
+
+    .season-list__item-desc {
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 560px) {
+    .seasons-list__item-img {
+        width: 100px;
+    }
+
+    .seasons-list__item {
+        margin: 50px 30px;
+    }
+
+    .season-list__item-desc {
+        font-size: 12px;
+    }
+}
+
+/* /SEASONS */
+
+/* FOOTER */
 
 .section-footer {
     background-color: #fff;
@@ -1423,21 +1596,35 @@ a {
 }
 
 .section-footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 50px 0;
 }
 
 .footer-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .socials-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 10px;
     position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -1450,37 +1637,52 @@ a {
     height: 25px;
     left: -35px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .socials-item:first-child::before {
-    background-image: url("../icons/viber.png");
+    background-image: url("../icons/envelope.png");
 }
 
 .socials-item:nth-child(2)::before {
+    background-image: url("../icons/phone-call.png");
+}
+
+.socials-item:nth-child(3)::before {
     background-image: url("../icons/telegram.png");
 }
 
 .socials-item:last-child::before {
-    background-image: url("../icons/envelope.png");
+    background-image: url("../icons/viber.png");
 }
 
 .socials-item:hover {
     color: var(--accent-color-4);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .footer-menu {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .footer-menu__item {
     position: relative;
     margin: 10px;
-    text-align: center;
+    text-align: right;
 }
 
 .footer-menu__item::after {
@@ -1503,7 +1705,10 @@ a {
 
 @media (max-width: 990px) {
     .section-footer__wrapper {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .section-footer__wrapper > div {
@@ -1511,30 +1716,41 @@ a {
     }
 
     .footer-menu {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .footer-copyright {
-        order: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
         text-align: center;
     }
 
     .footer-socials {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+                transform: translateX(20px);
     }
 }
 
 @media (min-width: 991px) {
     .section-footer__wrapper {
-        flex-direction: row;
-    }
-
-    .footer-menu {
-        align-items: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding-left: 20px;
     }
 
     .footer-copyright {
-        order: 0;
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
     }
 }
 
