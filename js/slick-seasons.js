@@ -1,19 +1,18 @@
 $(document).ready(function(){
-    $('.section-testimonials__list').slick({
+    $('.seasons-list').slick({
         autoplay: true,
         infinite: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 500,
         centerMode: true,
-        centerPadding: '150px',
-        slidesToShow: 2,
+        centerPadding: '60px',
+        slidesToShow: 6,
         responsive: [
             {
-                breakpoint: 1300,
+                breakpoint: 1500,
                 settings: {
-                arrows: false,
                 centerMode: true,
-                centerPadding: '150px',
-                slidesToShow: 1
+                centerPadding: '40px',
+                slidesToShow: 5
                 }
             },
         {
@@ -21,8 +20,8 @@ $(document).ready(function(){
             settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '20px',
-            slidesToShow: 1
+            centerPadding: '40px',
+            slidesToShow: 4
             }
         },
         {
@@ -30,8 +29,8 @@ $(document).ready(function(){
             settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '20px',
-            slidesToShow: 1
+            centerPadding: '40px',
+            slidesToShow: 3
             }
         }
         ]

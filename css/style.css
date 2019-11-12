@@ -866,7 +866,7 @@ a {
 }
 
 .section-testimonials__list {   
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -877,10 +877,11 @@ a {
     -webkit-box-shadow: 0 0 20px 10px rgba(0,0,0,0.1);
             box-shadow: 0 0 20px 10px rgba(0,0,0,0.1);
     width: 800px;
-    height: 100%;
+    height: 400px;
+    padding: 75px 30px;
 }
 
-.section-testimonials__item::before {
+/* .section-testimonials__item::before {
     content: "“";
     position: absolute;
     font-family: "NotoSansSC-Light";
@@ -892,7 +893,7 @@ a {
     position: absolute;
     font-family: "NotoSansSC-Light";
     color: var(--accent-color-1);
-}
+} */
 
 .section-testimonials__person {
     display: -webkit-box;
@@ -907,31 +908,22 @@ a {
     margin-top: 40px;
 }
 
-.person-photo-1 {
-    background-image: url("../images/person1.jpg");
+.person-photo {
     background-size: cover;
     background-position: 45% 50%;
-    width: 70px;
-    height: 70px;
     border-radius: 50%;
+}
+
+.person-photo-1 {
+    background-image: url("../images/person1.jpg");
 }
 
 .person-photo-2 {
     background-image: url("../images/person2.jpg");
-    background-size: cover;
-    background-position: 45% 50%;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
 }
 
 .person-photo-3 {
     background-image: url("../images/person3.jpg");
-    background-size: cover;
-    background-position: 45% 50%;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
 }
 
 .person-desc {
@@ -949,6 +941,7 @@ a {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-left: 40px;
+    text-align: left;
 }
 
 .person-workplace {
@@ -967,10 +960,19 @@ a {
     }
 
     .section-testimonials__item {
-        padding: 40px 20px;
+        margin: 0 10px;
+    }
+    
+    .person-name, .person-workplace {
+        font-size: 10px;
     }
 
-    .section-testimonials__item::before {
+    .person-photo {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* .section-testimonials__item::before {
         top: -14%;
         left: -31%;
         font-size: 150px;
@@ -980,7 +982,7 @@ a {
         bottom: -39%;
         right: -31%;
         font-size: 150px;
-    }
+    } */
 }
 
 @media (min-width: 425px) {
@@ -989,15 +991,20 @@ a {
     }
 
     .section-testimonials__text {
-        font-size: 13px;
-        line-height: 35px;
+        font-size: 12px;
+        line-height: 30px;
     }
 
     .section-testimonials__item {
-        padding: 40px;
+        margin: 0 10px;
     }
 
-    .section-testimonials__item::before {
+    .person-photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* .section-testimonials__item::before {
         top: -14%;
         left: -23%;
         font-size: 150px;
@@ -1007,19 +1014,15 @@ a {
         bottom: -39%;
         right: -23%;
         font-size: 150px;
-    }
+    } */
 }
 
 @media (min-width: 625px) {
-    .section-testimonials__text {
-        font-size: 18px;
-    }
-
     .section-testimonials__item {
-        padding: 70px;
+        margin: 0 20px;
     }
 
-    .section-testimonials__item::before {
+    /* .section-testimonials__item::before {
         top: -25%;
         left: -31%;
         font-size: 300px;
@@ -1029,19 +1032,19 @@ a {
         bottom: -69%;
         right: -31%;
         font-size: 300px;
-    }
+    } */
 }
 
 @media (min-width: 825px) {
     .section-testimonials__list {   
-        width: 800px;
+        width: 100%;
     }
 
-    .section-testimonials__item {
-        padding: 110px 100px;
+    .section-testimonials__text {
+        font-size: 18px;
     }
 
-    .section-testimonials__item::before {
+    /* .section-testimonials__item::before {
         top: -32%;
         left: -34%;
         font-size: 430px;
@@ -1051,7 +1054,7 @@ a {
         bottom: -88%;
         right: -34%;
         font-size: 430px;
-    }
+    } */
 }
 
 /* /TESTIMONIALS */
@@ -1293,6 +1296,8 @@ a {
     font-size: 20px;
     text-align: center;
     color: var(--accent-color-4);
+    border: 1px solid var(--accent-color-4);
+    outline: none;
 }
 
 .sum, .discount {
@@ -1406,7 +1411,6 @@ a {
 .section-seasons {
     background-color: var(--accent-color-1);
     height: 100%;
-    padding: 40px;
 }
 
 .seasons-list {
@@ -1524,15 +1528,21 @@ a {
     }
 }
 
+@media (max-width: 1149px) {
+    .section-seasons {
+        background-image: url("../images/stages-bg.png");
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+}
+
 @media (min-width: 1150px) {
     .section-seasons {
         background-image: url("../images/stages-bg.png"), url("../images/stages-bg1.png");
         background-size: contain, contain;
         background-position: left center, right center;
         background-repeat: no-repeat, no-repeat;
-        background-color: var(--accent-color-1);
-        height: 100%;
-        padding: 40px;
     }
     
 }
