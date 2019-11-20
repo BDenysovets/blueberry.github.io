@@ -1311,6 +1311,24 @@ a {
     margin-top: 20px;
 }
 
+.sum-submit {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-color: var(--accent-color-2);
+    border-width: 1px;
+    color: var(--accent-color-2);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sum-submit:hover,
+.sum-submit:active {
+    background-color: var(--accent-color-2);
+    color: var(--accent-color-1);
+    transition: 0.3s;
+}
+
 @media (max-width: 420px) {
     .section-pricing__item {
         width: 290px;

@@ -247,7 +247,7 @@
                     <li class="section-pricing__item">
                         <div class="item-title">Від 100кг</div>
                         <div class="item-price">&#8372;100</div>
-                        <div class="item-date">знижка -15%</div>
+                        <div class="item-date">знижка -10%</div>
                         <div class="item-features__list">
                             <div class="features__list-item ad">Зібрано вручну</div>
                             <div class="features__list-item ad">Ручне фасування</div>
@@ -261,15 +261,16 @@
                     <div class="calc-title">Швидкий підрахунок вартості<span class="dot">.</span></div>
                     <div class="calc-wrapper">
                         <div class="pricing-label">Введіть бажану вагу в кг<span class="dot">.</span></div>
-                        <input type="text" class="price-input">
+                        <input type="text" class="price-input" id="userValue">
                         <div class="discount">
                             <div class="discount-title">Знижка</div>
-                            <div class="discount-value">5%</div>
+                            <div class="discount-value">0 %</div>
                         </div>
                         <div class="sum">
                             <div class="sum-title">Загальна вартість</div>
-                            <div class="sum-value">120грн</div>
+                            <div class="sum-value">0 грн</div>
                         </div>
+                        <button class="sum-submit" onclick="sumCalc()">Підрахувати</button>
                     </div>
                 </div>
             </div>
