@@ -1211,6 +1211,7 @@ a {
             transform: translateX(-50%);
     background-size: contain;
     background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 .section-pricing__item:first-child::after {
@@ -1232,6 +1233,20 @@ a {
     height: 130px;
     bottom: -35%;
     background-image: url("../images/blueberry_in_busket.png");
+}
+
+.section-pricing__item:hover:first-child .order-button,
+.section-pricing__item:hover:last-child .order-button {
+    padding: 13px;
+    width: 100%;
+    font-size: 15px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+        transform: scale(0);
+    border: 1px solid var(--accent-color-2);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .item-title {
@@ -1463,13 +1478,9 @@ a {
     
     .section-pricing__item:hover:first-child .order-button,
     .section-pricing__item:hover:last-child .order-button {
-        padding: 13px;
-        width: 100%;
-        font-size: 15px;
-        border: 1px solid var(--accent-color-2);
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
     }
     
     .section-pricing__item:first-child,
@@ -1524,9 +1535,9 @@ a {
 
 .seasons-list__item:hover,
 .seasons-list__item:active {
-    -webkit-transform: scale(1.1) translateY(-20px);
-        -ms-transform: scale(1.1) translateY(-20px);
-            transform: scale(1.1) translateY(-20px);
+    -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+            transform: translateY(-20px);
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
@@ -1536,6 +1547,9 @@ a {
 .seasons-list__item:hover .seasons-list__item-img,
 .seasons-list__item:active .seasons-list__item-img {
     opacity: 0.5;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+        transform: scale(0.7);
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
@@ -1543,6 +1557,7 @@ a {
 
 .seasons-list__item-img {
     height: auto;
+    margin: 0 auto 15px;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
