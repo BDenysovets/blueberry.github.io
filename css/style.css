@@ -22,6 +22,7 @@
             box-sizing: border-box;
     font-family: "Montserrat-Medium";
     color: #313131;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -197,8 +198,8 @@ a {
 }
 
 .header-menu__item:hover::after {
-    -webkit-animation: menu-animation 0.15s ease-in-out forwards;
-            animation: menu-animation 0.15s ease-in-out forwards;
+    -webkit-animation: menu-animation 0.25s ease-in-out forwards;
+            animation: menu-animation 0.25s ease-in-out forwards;
 }
 
 @-webkit-keyframes menu-animation {
