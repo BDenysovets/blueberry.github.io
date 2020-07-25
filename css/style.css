@@ -142,17 +142,6 @@ html {
     background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(204,211,255,1) 50%);
     background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(50%, rgba(204,211,255,1)));
     background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(204,211,255,1) 50%);
-    animation: headerApp 0.3s ease-in-out forwards;
-}
-
-@keyframes headerApp {
-    from {
-        transform: translateY(-200px);
-    }
-
-    to {
-        transform: translateY(0);
-    }
 }
 
 .section-header::after {
@@ -440,21 +429,10 @@ html {
     position: absolute;
     display: block;
     right: 50%;
-    -webkit-transform: translateX(50%) translateY(60vh);
-        -ms-transform: translateX(50%) translateY(60vh);
-            transform: translateX(50%) translateY(60vh);
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
     z-index: 10;
-    animation: titleImgApp 0.5s 0.3s ease-in-out forwards;
-}
-
-@keyframes titleImgApp {
-    from {
-        transform: translateY(60vh) translateX(50%);
-    }
-
-    to {
-        transform: translateY(0) translateX(50%);
-    }
 }
 
 .title__left-side {
@@ -462,7 +440,7 @@ html {
     color: var(--accent-color-1);
     z-index: 5;
     right: 50%;
-    animation: leftWordApp 0.3s ease-in-out forwards;
+    animation: leftWordApp 0.75s ease-in-out forwards;
 }
 
 @keyframes leftWordApp {
@@ -479,7 +457,7 @@ html {
     position: absolute;
     color: #fff;
     z-index: 15;
-    animation: rightWordApp 0.3s ease-in-out forwards;
+    animation: rightWordApp 0.75s ease-in-out forwards;
 }
 
 @keyframes rightWordApp {
