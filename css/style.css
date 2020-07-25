@@ -20,9 +20,11 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: "Montserrat-Medium";
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     color: #313131;
     scroll-behavior: smooth;
+    font-weight: 400;
+    outline: none;
 }
 
 ul {
@@ -409,8 +411,9 @@ a {
 }
 
 .title {
-    font-family: "NotoSansSC-Bold";
+    font-family: "Noto Sans SC";
     top: 35%;
+    font-weight: 700;
 }
 
 .title-img {
@@ -582,22 +585,31 @@ a {
 }
 
 .section-about__words {
-    font-family: "NotoSansSC-Bold";
-    color: var(--accent-color-3);
+    font-family: "Montserrat";
+    color: var(--accent-color-1);
+    -webkit-text-stroke: 0px transparent;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
-    transition: 0.3s;
+    transition: all 0.3s;
     position: relative;
+    font-weight: 700;
+}
+
+.section-about__words:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--accent-color-1);
 }
 
 .section-about__words-desc {
     position: absolute;
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat";
     color: var(--accent-color-1);
+    -webkit-text-stroke: 0 transparent;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 0;
+    font-weight: 300;
 }
 
 .section-about__words::before {
@@ -624,13 +636,6 @@ a {
     transition: 0.3s;
 }
 
-.section-about__words:hover {
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    color: var(--accent-color-1);
-}
-
 @media (max-width: 479px) {
     .section-about__words-desc {
         width: 300px;
@@ -641,7 +646,7 @@ a {
     }
 
     .section-about__words {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .section-about__words-desc {
@@ -669,7 +674,7 @@ a {
     }
 
     .section-about__words {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .section-about__words-desc {
@@ -748,7 +753,7 @@ a {
     }
 
     .section-about__words {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .section-about__img {
@@ -805,7 +810,7 @@ a {
 
 @media (min-width: 1050px) {
     .section-about__words {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .section-about__img {
@@ -825,7 +830,7 @@ a {
 
 @media (min-width: 1200px) {
     .section-about__words {
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .section-about__img {
@@ -841,13 +846,13 @@ a {
 
 @media (min-width: 1420px) {
     .section-about__words {
-        font-size: 110px;
+        font-size: 90px;
     }
 }
 
 @media (min-width: 1550px) {
     .section-about__words {
-        font-size: 120px;
+        font-size: 100px;
     }
 }
 
@@ -861,8 +866,8 @@ a {
 }
 .section-statistics__wrapper {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .section-statistics__title {
@@ -888,7 +893,7 @@ a {
 }
 
 .item-numbers {
-    font-family: "NotoSansSC-Bold";
+    font-family: "Noto Sans SC";
     font-size: 35px;
     color: var(--accent-color-4);
 }
@@ -1015,7 +1020,8 @@ a {
 
 .person-workplace {
     margin-top: 15px;
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat";
+    font-weight: 300;
 }
 
 @media (max-width: 424px) {
@@ -1250,25 +1256,28 @@ a {
 }
 
 .item-title {
-    font-family: "Montserrat-ExtraBold";
+    font-family: "Montserrat";
     font-size: 35px;
     font-weight: 900;
     color: #7e87ff;
 }
 
 .item-subtitle {
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat";
     color: var(--accent-color-4);
+    font-weight: 300;
 }
 
 .item-price {
-    font-family: "Montserrat-Regular";
+    font-family: "Montserrat";
+    font-weight: 400;
     font-size: 35px;
     margin-top: 30px;
 }
 
 .item-date {
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat";
+    font-weight: 300;
     margin-bottom: 50px;
 }
 
@@ -1289,7 +1298,8 @@ a {
 }
 
 .features__list-item {
-    font-family: "Montserrat-Medium";
+    font-family: "Montserrat";
+    font-weight: 500;
     margin: 10px 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -1302,7 +1312,8 @@ a {
     padding: 0;
     width: 0;
     font-size: 0;
-    font-family: "Montserrat-Light";
+    font-family: "Montserrat";
+    font-weight: 300;
     background-color: var(--accent-color-2);
     color: #fff;
     border: 0px solid var(--accent-color-2);
@@ -1312,6 +1323,7 @@ a {
     -o-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
+    text-align: center;
 }
 
 .order-button:hover {
